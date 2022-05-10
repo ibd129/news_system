@@ -55,6 +55,13 @@
     background-image: -webkit-linear-gradient(92deg, #e9e76c, #4b91c0);
     animation-delay: 0.7s;
 }
+.go{
+    text-align: center;
+}
+.go a{
+    text-decoration: none;
+    color: skyblue;
+}
 /* 设置过渡动画 */
 @-webkit-keyframes hue 
     {
