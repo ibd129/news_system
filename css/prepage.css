@@ -140,13 +140,13 @@ body:hover .stacks>li {
   width: 99vw;
   height: 100vh;
   z-index: 99999;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
-/* .web:hover {
+.web:hover {
   opacity: 1;
   transition: all 4s ease-in-out;
-} */
+}
 
 .web .head {
   width: 100%;
