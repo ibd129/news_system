@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/animate.css">
+</head>
+<body>
+    <div class="grid">
+        <div class="span-col-4">@keyframes</div>
+        <div class="span-col-3">/* 动画代码 */
+            @keyframes example {<br/>
+              from {background-color: red;}<br/>
+              to {background-color: yellow;}<br/>
+            }<br/>
+            
+            /* 向此元素应用动画效果 */<br/>
+            div {<br/>
+              width: 100px;<br/>
+              height: 100px;<br/>
+              background-color: red;<br/>
+              animation-name: example;<br/>
+              animation-duration: 4s;<br/>
+            }<br/>
+            @keyframes example {<br/>
+                0%   {background-color:red; left:0px; top:0px;}<br/>
+                25%  {background-color:yellow; left:200px; top:0px;}<br/>
+                50%  {background-color:blue; left:200px; top:200px;}<br/>
+                75%  {background-color:green; left:0px; top:200px;}<br/>
+                100% {background-color:red; left:0px; top:0px;}<br/>
+              }
+        </div>
+        <div>Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per. 3</div>
+        <div class="span-col-4"></div>
+      </div>
+      <div class="grid">
+        <div class="span-col-4">@keyframes</div>
+        <div class="span-col-3"></div>
+        <div>Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per. 3</div>
+        <div class="span-col-4">Lorem ipsum dolor sit amet, idque mollis consetetur at vis, eam at sale atqui. Sapientem qualisque reprehendunt eu his, ne sit oratio accusam. In has ocurreret vulputate, etiam sadipscing ut per. 4</div>
+      </div>
+</body>
+</html>
