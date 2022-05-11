@@ -1,0 +1,16 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 12px;
+}
+.span-col-4{grid-column: span 4 / auto;
+background-color: aqua;}
+
+.span-col-3{grid-column: span 3 / auto; background-color: rgb(169, 169, 245);}
+a{
+    text-decoration: none;
+}
+div{
+    background-color: rgb(207, 204, 204);
+    column-count: 2;
+}

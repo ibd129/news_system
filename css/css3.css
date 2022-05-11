@@ -1,0 +1,39 @@
+a{
+    text-decoration: none;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 12px;
+}
+
+.grid div {
+    background-color: rgb(221, 208, 208);
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+.span-col-2 {
+    grid-column: span 6 / auto;
+    font-family: '宋体';
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(200, 80, 255);
+}
+.span-col-2~div{
+   font-size: 18px;
+   color: rgb(41, 10, 151);
+   font-family: '楷体';
+   border-radius: 5%;
+    
+}
+.span-col-2~div:hover a{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(13, 176, 240);
+    transition: font-size .5s,font-weight .5s,color .5s;
+}
+.span-col-2~div:hover{
+    box-shadow: 4px 4px 4px #ccc;
+}
