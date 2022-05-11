@@ -3,7 +3,7 @@ a{
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 12px;
 }
 
@@ -22,14 +22,14 @@ a{
     color: rgb(200, 80, 255);
 }
 .span-col-2~div{
-   font-size: 18px;
+   font-size: 12px;
    color: rgb(41, 10, 151);
    font-family: '楷体';
    border-radius: 5%;
     
 }
 .span-col-2~div:hover a{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     color: rgb(13, 176, 240);
     transition: font-size .5s,font-weight .5s,color .5s;
