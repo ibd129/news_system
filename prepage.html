@@ -7,11 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./css/prepage.css">
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <!--style_sheet-->
+  <link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+  <link rel="stylesheet" href="css/font-awesome.css"> <!-- Font-Awesome_Icons-CSS -->
+
 </head>
 
 <body>
   <div class="bg">
-     <ul class="stacks">
+    <ul class="stacks">
       <li></li>
       <li></li>
       <li></li>
@@ -22,32 +27,119 @@
       <li></li>
       <li></li>
       <li></li>
-    </ul> 
+    </ul>
   </div>
   <div class="web">
-    <div class="grid">
-      <div class="span-col-4"><div class="head"><b>TIYU</b></div></div>
-      <div><a href="css3.html">CSS3</a></div>
-      <div><a href="music.html">HTML5</a></div>
-      <div><a href="music.html">JavaScript</a></div>
-      <div><a href="music.html">Vue</a></div>
-      <div><a href="music.html">React</a></div>
-      <div><a href="music.html">Angular</a></div>
-      <div><a href="music.html">canvas</a></div>
-      <div><a href="music.html">Ajax</a></div>
-      <div class="span-col-2">音乐</div>
-      <div class="span-col-2">游戏</div>
+    <h1>欢迎<span class="w3l-try">来</span>到<span class="w3l-try">我的</span>网站<span class="w3l-try">主</span>页
+    </h1>
+    <div class="w3ls-agile-profile">
+      <div class="container">
+        <h2 class="w3ls-me">Hi!, 我是天问</h2>
+        <P> 一个专注与研究动画和网页制作的傻子.</p>
+        <h3 class="w3ls-text">我是一个 <span class="w3l-try1"> Web </span> & <span class="w3l-try1"> UI </span>设计师</h3>
+        <div id="typed-strings" class="agileits_w3layouts_strings">
+          <p>一个 <i><span class="w3l-try">animate cc</span>动画制作者.</i></p>
+          <p>一个 <i><span class="w3l-try">UI</span> 设计者.</i></p>
+          <p>一个 <i>WEB <span class="w3l-try">开发</span>者.</i></p>
+        </div>
+        <span id="typed" style="white-space:pre;"></span>
+        <p class="w3ls-p">一个充满创造力的交互式网页设计师</p>
+        <a href="#small-dialog1" class="buy btn-wayra w3_play_icon1">关于 我</a>
+      </div><!--  -->
     </div>
-    
-    <div class="nav">
+    <div class="w3_agileits_social_media">
+      <ul>
+        <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+        <li><a href="#" class="wthree_behance"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+      </ul>
     </div>
-    <div class="main">
-        <div class="music"></div>
+
+    <!--pop-up-->
+    <div id="small-dialog1" class="mfp-hide">
+      <div class="about" id="about">
+        <div class="person-info-agileits-w3layouts">
+          <h3 class="w3_head w3_head1">About Me <span>我是 天问</span></h3>
+          <p><span>Hi!</span>热爱学习，勤于思考，善于从多个角度研究问题，分析处理难题。
+            本人诚实守信，讲原则，不推卸职责;有自制力，做事情始终坚持有始有终;愿意虚心向他人学习;自信但不自负，不以自我为中心。为人诚恳，性格开朗，进取进取，适应力强，勤奋好学，脚踏实地，有较强的团队精神，学习进取，态度认真。
+          </p>
+          <ul>
+            <li><span>姓名</span>: 天问</li>
+            <li><span>年龄</span>: 23岁</li>
+            <li><span>Email</span>: <a href="1536479720@qq.com">1536479720@qq.com</a></li>
+            <li><span>电话</span>: 18781874284</li>
+            <li><span>个人网站</span>: <a href="http://tianwenting.xyz">www.tianwenting.xyz</a></li>
+            <li><span>现居</span>: 广州天河区</li>
+            <li><a href="#" class="botton-w3ls">GitHub</a>
+              <a href="#" class="botton-w3ls">Gitee</a>
+            </li>
+          </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
     </div>
-    <div class="footer">
-    </div>
+    <footer></footer>
   </div>
-  
+
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+  <!-- pop-up-box-js-file -->
+  <script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.w3_play_icon,.w3_play_icon1,.w3_play_icon2').magnificPopup({
+        type: 'inline',
+        fixedContentPos: false,
+        fixedBgPos: true,
+        overflowY: 'auto',
+        closeBtnInside: true,
+        preloader: false,
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+      });
+
+    });
+  </script>
+  <!-- banner-type-text -->
+  <script src="js/typed.js" type="text/javascript"></script>
+
+  <script>
+    $(function () {
+
+      $("#typed").typed({
+        // strings: ["Typed.js is a <strong>jQuery</strong> plugin.", "It <em>types</em> out sentences.", "And then deletes them.", "Try it out!"],
+        stringsElement: $('#typed-strings'),
+        typeSpeed: 30,
+        backDelay: 500,
+        loop: false,
+        contentType: 'html', // or text
+        // defaults to false for infinite loop
+        loopCount: false,
+        callback: function () {
+          foo();
+        },
+        resetCallback: function () {
+          newTyped();
+        }
+      });
+
+      $(".reset").click(function () {
+        $("#typed").typed('reset');
+      });
+
+    });
+
+    function newTyped() {
+      /* A new typed object */
+    }
+
+    function foo() {
+      console.log("Callback");
+    }
+  </script>
 </body>
 
 </html>
