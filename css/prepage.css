@@ -18,7 +18,7 @@ ul.stacks {
   flex-direction: row;
   /* vh为相对视口高度 */
   height: 100vh;
-  z-index: 99999;
+  z-index: -1;
 }
 
 ul.stacks li {
@@ -35,7 +35,7 @@ ul.stacks li::after {
   /* 视口宽度 */
   width: 100vw;
   height: 100vh;
-  background-image: url(../img/bg.jpeg);
+  background-image: url(../images/2250245fc6f061ca9c213e12548bc24a.jpeg);
   /* 规定背景图像尺寸。	把背景图像扩展至足够大，以使背景图像完全覆盖背景区域。
 背景图像的某些部分也许无法显示在背景定位区域中。 */
   background-size: cover;
@@ -139,174 +139,11 @@ body:hover .stacks>li {
   top: 0;
   width: 99vw;
   height: 100vh;
-  z-index: 99999;
+  z-index: 1;
   opacity: 0;
 }
 
 .web:hover {
   opacity: 1;
-  transition: all 4s ease-in-out;
-}
-
-.web .head {
-  width: 100%;
-  height: 100px;
-  background-color: pink;
-  font-size: 80px;
-  text-align: center;
-}
-
-.web .head b {
-  transition: text-shadow 1s, font-size 1s, transform 1s;
-}
-
-.web .head b:hover {
-  text-shadow: 10px -10px 10px #999;
-  font-size: 86px;
-
-}
-
-.web .nav {
-  height: 70px;
-
-}
-
-.web .nav ul {
-  margin: 0;
-  padding: 0;
-}
-
-.web .nav ul::after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-.web .nav ul>li {
-  list-style: none;
-  float: left;
-  width: 150px;
-  height: 70px;
-  line-height: 70px;
-  background-color: antiquewhite;
-  border: 1px solid #999;
-  text-align: center;
-  font-size: 24px;
-  text-shadow: 1px 1px #999;
-  border-radius: 5%;
-  color: rgb(37, 55, 218);
-
-}
-
-.web .nav ul>li:hover {
-  background-color: aqua;
-
-}
-
-.web .nav ul>li a:hover {
-  color: rgb(248, 250, 252);
-}
-
-.web .nav ul>li:last-child {
-  float: right;
-  width: 70px;
-  font-size: 50px;
-}
-
-.web .main {
-  margin-top: 2px;
-}
-
-.web .main ul {
-  background-color: skyblue;
-  margin: 0;
-  padding: 0;
-}
-
-.web .main ul>li {
-  list-style: none;
-  display: flex;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
-  background-color: rgb(228, 36, 36);
-  border: 1px solid #999;
-  text-align: center;
-  font-size: 18px;
-  color: antiquewhite;
-  border-radius: 50%;
-  margin-right: 30px;
-  text-shadow: 1px 1px #999;
-  transition: width 1s, height 1s, background-color 1s, line-height 1s, font-size 1s, color 1s, transform 1s;
-}
-
-.web .main ul>li:hover {
-  width: 80px;
-  height: 80px;
-  background-color: darkkhaki;
-  line-height: 80px;
-  font-size: 25px;
-  color: coral;
-}
-
-.music {
-  height: 500px;
-  background-color: #999;
-}
-
-.footer {
-  height: 300px;
-  background-color: blueviolet;
-}
-
-.mouseS {
-  position: absolute;
-  background-color: aqua;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 30% 90% 90% 90%;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fre);
-  grid-gap: 30px;
-}
-
-.span-col-4 {
-  grid-column: span 4 / auto;
-  width: 100%;
-  height: 100px;
-  background-color: pink;
-  font-size: 30px;
-
-}
-.grid div{
-  background-color: aqua;
-  height: 5rem;
-  text-align: center;
-  line-height: 5rem;
-  border-radius: 2%;
-}
-.grid div a{
-  color: rgb(211, 60, 98);
-  font-size: 20px;
-}
-.grid div:hover{
-  background-color: rgb(9, 221, 221);
-  box-shadow: 4px 4px 4px #999;
-}
-.grid div:hover a{
-  font-size: 30px;
-  color: rgb(72, 95, 228);
-  font-weight: bold;
-  transition:color 2s,font-size 1s,transform 1s;
-}
-.span-col-2 {
-  grid-column: span 2 / auto;
+  transition: all 2s ease-in-out;
 }

@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
 .container {
     height: 50vh;
     display: flex;
@@ -16,56 +23,63 @@
 .container .lab {
     position: relative;
     display: flex;
-    flex: 1;
-    font-size: 30px;
+    gap: 30px;
+    justify-content: space-around;
     font-weight: bold;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* -webkit-background-clip: text; */
+
+    /* -webkit-text-fill-color: transparent; */
 }
-.container .lab:hover{
+
+.container .lab:hover {
     animation: bling .5s linear infinite;
-}
-/* 设置各个标签渐变色 */
-.container .lab:nth-child(1) {
-    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+
 }
 
-.container .lab:nth-child(2) {
-    background-image: -webkit-linear-gradient(92deg, #26f382, #d73afe);
-}
-
-.container .lab:nth-child(3) {
-    background-image: -webkit-linear-gradient(92deg, #da3c0c, #cafe3a);
-}
-
-.container .lab:nth-child(4) {
-    background-image: -webkit-linear-gradient(92deg, #c48a78, #bee25c);;
-}
-
-.container .lab:nth-child(5) {
-    background-image: -webkit-linear-gradient(92deg, #6de7e1, #cee985);
-}
-
-.container .lab:nth-child(6) {
-    background-image: -webkit-linear-gradient(92deg, #628145, #d8e65f);
-}
-
-.container .lab:nth-child(7) {
-    background-image: -webkit-linear-gradient(92deg, #995d96, #d7f094);
-}
-
-.container .lab:nth-child(8) {
-    background-image: -webkit-linear-gradient(92deg, #e9e76c, #4b91c0);
-}
-/* 设置hover过渡效果 */
 .container .lab a {
-    transition: all .5s linear;
+    position: relative;
+    -webkit-text-stroke: 1px rgb(220, 215, 215);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 4em;
+    color: transparent;
 }
 
-.container .lab a:hover {
+.container .lab a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: rgb(215, 22, 228);
+    width: 0;
+    height: 1.5em;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 8px solid rgb(215, 22, 228);
+
+}
+
+.container .lab a:hover::before {
+    width: 100%;
+    -webkit-text-stroke: 1px rgb(232, 133, 227);
+    filter: drop-shadow(0 0 40px rgb(215, 22, 228));
+}
+
+/* 设置各个标签渐变色 */
+/* .container .lab {
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+} */
+
+
+/* 设置hover过渡效果 */
+/* .container .lab a {
+    transition: all .5s linear;
+} */
+
+/* .container .lab a:hover {
     font-size: 40px;
     transition: all .5s linear;
-}
+} */
+
 .go {
     text-align: center;
 }
@@ -159,12 +173,14 @@ div {
         transform: rotateY(1turn);
     }
 }
+
 /* hover时的动画 */
-@keyframes bling{
-    form{
-        background-image: -webkit-linear-gradient(45deg, #f35626, #feab3a,rgb(0, 132, 255));
+/* @keyframes bling {
+    form {
+        background-image: -webkit-linear-gradient(45deg, #f35626, #feab3a, rgb(0, 132, 255));
     }
-    to{
-        background-image: -webkit-linear-gradient(45deg, #2667f3, #5cc494,rgb(255, 0, 234));
+
+    to {
+        background-image: -webkit-linear-gradient(45deg, #2667f3, #5cc494, rgb(255, 0, 234));
     }
-}
+} */
