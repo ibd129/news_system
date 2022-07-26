@@ -1,0 +1,52 @@
+{
+  "name": "vue-news-system",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "core-js": "^3.8.3",
+    "element-ui": "^2.15.9",
+    "hbuilderx-plugin-cef3": "^1.0.3-2021011419",
+    "hbuilderx-plugin-jre": "^2.1.7-2020061018",
+    "hbuilderx-plugin-ls": "^2.0.0-2022040810",
+    "hbuilderx-plugin-uniapp-cli": "^3.4.15-2022060920",
+    "hbuilderx-plugin-unicloud": "^2.0.33-2022052510",
+    "vue": "^2.6.14",
+    "vue-router": "^3.5.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "babel-plugin-component": "^1.1.1",
+    "eslint": "^7.32.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "@babel/eslint-parser"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
